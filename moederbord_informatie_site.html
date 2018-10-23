@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <title>Moederbord - Abel de Lange 4E</title>
+    <link rel='shortcut icon' type='image/x-icon' href='afb/favicon_moederbord.ico'>
+    <link href="css/opmaak.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div id="pagina_eerste_deel">
+      <img id="achtergrond_afb"src="afb/motherboard-hd-wallpaper-2.jpg">
+
+      <div id="head_text">
+        <h1 id="head_text_h1">Het Moederbord</h1><br>
+        <p>Ons elektronisch hart</p><br>
+        <a id="meer_info" href="https://nl.wikipedia.org/wiki/Moederbord" target="_blank">Meer weten?</a>
+      </div>
+
+      <img id="afb_logo" src="afb/logo_abel_wit.png">
+      <h5 id="tekst_logo">Abel de Lange 4E</h5>
+
+      <div class="pijl bounce">
+        <a class="fa fa-arrow-down fa-2x" href="#pagina_tweede_deel"><img class="aanwijs_pijl" src="afb/pijl_naar_beneden.png"></a>
+      </div>
+
+      <div id="dia_show">
+        <img id="afb_dia"src="afb/moederbord_1.png">
+        <input id="dia_volgende_knop" type="image" onclick="nextImage()" src="afb/volgende_knop.png">
+      </div>
+
+      <div id="slide_knopjes">
+        <button id="afb1_knop" onclick="drawImage1()">1</button>
+        <button id="afb2_knop" onclick="drawImage2()">2</button>
+        <button id="afb3_knop" onclick="drawImage3()">3</button>
+        <button id="afb4_knop" onclick="drawImage4()">4</button>
+      </div>
+    </div>
+
+    <div id="pagina_tweede_deel">
+      <div id="overgang_1"></div>
+
+      <div id="laag_1">
+        <div id="lijn1"></div>
+        <div id="lijn2"></div>
+        <div id="tekst_schaduw"></div>
+
+        <input id="tekst1_show" type="button" onclick="drawText1()" value="Wat is een moederbord?">
+        <input id="tekst2_show" type="button" onclick="drawText2()" value="Waar bestaat een moederbord uit?">
+        <input id="tekst3_show" type="button" onclick="drawText3()" value="Waar moet je op letten?">
+        <input id="tekst4_show" type="button" onclick="drawText4()" value="Geschiedenis">
+
+        <div id="tekst1">
+          <h2>Wat is een moederbord?</h2><br><br>
+          <p>Het moederbord is het belangrijkste onderdeel van onze elektronica. Het wordt ook wel een systeembord, mainboard of volgens Apple: een Logic Board  genoemd. Door de jaren heen heeft het moederbord steeds meer functionaliteit gekregen. Tegenwoordig woorden hele pc’s gebouwd op een moederbord. Het is een printplaat die ervoor zorgt dat alle onderdelen in de computer met elkaar kunnen communiceren en stroom krijgen. Alles wordt op het moederbord aangesloten. Het is als het ware de basis van je computer, telefoon en alle andere devices. Als je een moederbord nodig hebt is het dus ook belangrijk dat je er een koopt die voldoet aan je behoefte en dat je weet wat je ermee wil gaan doen in de toekomst.</p>
+          <input id="terug_knop" type="button" onclick="backToMain()" value="Terug">
+        </div>
+
+        <div id="tekst2">
+          <h2>Waar bestaat een moederbord uit?</h2><br><br>
+          <p>De processor, ook wel de centrale verwerkingseenheid genoemd. In het Engels de CPU, Central Processing Unit. Het BIOS, Basic Input / Output System. Deze bevat een set basisinstructies voor het communiceren tussen het besturingssysteem en de hardware. Deze software regelt ook het opstarten van de pc als het echte besturingssysteem nog niet geladen is. Dit is dan ook de enige beschikbare code. De chipset is verantwoordelijk voor de communicatie tussen de processor en de andere onderdelen. De chips hebben koeling nodig,  dat betekent dat ze niet altijd meteen zichtbaar zijn. Vaak worden chipsets speciaal ontworpen voor een specifieke processor. Verder zijn de belangrijkste onderdelen:</p>
+          <ul>
+            <li> de slots voor het werkgeheugen</li>
+            <li>geluidskaart</li>
+            <li>netwerkkaart</li>
+          </ul>
+          <input id="terug_knop" type="button" onclick="backToMain()" value="Terug">
+        </div>
+
+        <div id="tekst3">
+          <h2>Waar moet je opletten bij het kopen van een moederbord?</h2><br><br>
+          <p>Alle moederborden werken op dezelfde manier.  We onderscheiden de verschillende soorten moederborden op basis van welke processors ze ondersteunen: Intel of AMD. Dus de processor die je kiest bepaalt ook welk soort moederbord je nodig hebt. De keuze hangt af van wat je met je computer doet en wil doen. Dus waar gebruik je je computer voor en wat wil je er later mee doen. Als een moederbord uitbreidingsmogelijkheden heeft hoef je later geen nieuw moederbord meer te kopen (als je wil uitberieden). De eerste keuze bestaat uit het soort processor, Intel of AMD. Het formaat speelt ook een belangrijke rol, je moederbord moet natuurlijk wel in de computer passen. Daarna moet je de chipset bepalen. Deze bepaalt welke onderdelen je kan aansluiten op het moederbord. Nu begint het echte personaliseren van je moederbord!</p>
+          <input id="terug_knop" type="button" onclick="backToMain()" value="Terug">
+        </div>
+
+        <div id="tekst4">
+          <h2>Geschiedenis</h2><br><br>
+          <p>Het moederbord is niet in een keer ontstaan. Het is geleidelijk ontwikkeld tot hoe we het nu kennen.  Eerst was het een simpele printplaat met niets erop, dit heette een backplane. In de jaren 1980 had elk onderdeel van een computer zijn eigen printplaat waarmee hij communiceerde. Deze printplaten waren allemaal aangesloten op de backplane. Dit was dus de gemeenschappelijke printplaat dat alles met elkaar liet werken. De IBM Personal Computer had het eerste moederbord zoals wij die kennen. Nu kan een moederbord alle functies leveren die een computer nodig heeft. </p>
+          <input id="terug_knop" type="button" onclick="backToMain()" value="Terug">
+        </div>
+
+      </div>
+    </div>
+    <script src="js/moederbord_js.js"></script>
+  </body>
+</html>
